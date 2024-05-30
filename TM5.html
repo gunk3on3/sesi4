@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM5</title>
+</head>
+<body>
+    <div id="hasil"></div>
+    <label for="masukan">Masukan Kalimat: </label>
+    <input type="text" id="masukan" /> <br/>
+    <label for="jumlah">Jumlah: </label>
+    <input type="number" id="jumlah" /> <br/><br/>
+
+    <button onclick="cetakTulisan();">Cetak</button>
+    
+
+    <script>
+
+        function cetakTulisan(){
+        const hasil = document.getElementById('hasil');
+        let tampung = '<ol>';
+
+        // menggunakan looping for
+        for(let i = 0; i < jumlah; i++){
+            tampung = tampung + '<li>' + masukan + '</li>';
+        }
+        tampung = tampung + '</ol>';
+
+        hasil.innerHTML = tampung;
+        }
+    </script>
+
+</body>
+</html>
